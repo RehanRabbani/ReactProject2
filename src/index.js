@@ -6,7 +6,9 @@ import MediaCard from './components/Box';
 import NavBar from './components/Navbar';
 import Slider from './components/Slider';
 import Menu from './components/Menu';
-class App extends Component {
+import ExtraComponent from './components/ExtraComponent';
+import RouterComponent from './RouterComponent';
+ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,6 +16,7 @@ class App extends Component {
           
         }
     }
+
     componentDidMount() {
         axios.get('https://www.themealdb.com/api/json/v1/1/categories.php')
           .then(res=>{
@@ -26,6 +29,7 @@ class App extends Component {
             
           })
     }
+   
     render() {
         let {foods}=this.state;
        
@@ -34,6 +38,7 @@ class App extends Component {
          <div className="parent">
         <NavBar/>
         <Slider/>
+      
         <Menu picture={this.state.foods}/>
         
          {/* <p>
@@ -54,4 +59,4 @@ class App extends Component {
     }
     }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<RouterComponent />, document.getElementById('root'));

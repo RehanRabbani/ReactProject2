@@ -31,3 +31,16 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.category-styling{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cate-srt{
+  width: 22%;
+        display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}

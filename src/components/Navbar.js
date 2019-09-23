@@ -2,7 +2,7 @@ import React from 'react';
 //import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import logo from '../images/room-service.png';
-
+import {Link} from 'react-router-dom';
 class NavBar extends React.Component{
     render(){
         return(
@@ -23,6 +23,9 @@ class NavBar extends React.Component{
             <Nav.Item>
               <Nav.Link href="/home">HOME</Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+            <Nav.Link href="/home"><Link to="/extra">Extra</Link></Nav.Link>
+          </Nav.Item>
           </Nav>
         )
     }

@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
     card: {
@@ -23,6 +24,7 @@ const useStyles = makeStyles({
     return (
         
         <div className="box-st">
+        <Link to={`/dish/${props.pictureText}`} onClick={()=>alert(props.pictureId)}>
       <Card className={classes.card}>
         <CardActionArea>
           <CardMedia
@@ -31,16 +33,17 @@ const useStyles = makeStyles({
            
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-             {props.category}
+            <Typography gutterBottom variant="p" component="h6" style={{textAlign:"center"}}>
+             {props.pictureText}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {props.description}
             </Typography>
           </CardContent>
         </CardActionArea>
-        
+       
       </Card>
+      </Link>
       </div>
      
     );
