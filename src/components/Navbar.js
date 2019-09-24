@@ -15,13 +15,13 @@ class NavBar extends React.Component{
             </Nav.Item>
             <image src={logo} height="100" width="100" style={{backgroundColor:"red"}}/>
             <Nav.Item>
-              <Nav.Link href="/home">ABOUT</Nav.Link>
+              <Nav.Link href="#">ABOUT</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="https://rehanrabbani.github.io/portfolio/" target="_blank">CONTACTS</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/home">EVENTS</Nav.Link>
+              <Nav.Link href="#">EVENTS</Nav.Link>
             </Nav.Item>
             
           </Nav>

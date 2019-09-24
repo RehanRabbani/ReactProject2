@@ -9,40 +9,22 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom';
 
-const useStyles = makeStyles({
-    card: {
-      maxWidth: 345,
-    },
-    media: {
-      height: 140,
-    },
-  });
   
   export default function MediaCard(props) {
-    const classes = useStyles();
-  
+    
     return (
         
         <div className="box-st">
-        <Link to={`/dish/${props.pictureText}`} onClick={()=>alert(props.pictureId)}>
-      <Card className={classes.card}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={props.picturediv}
+        <Link to={`/dish/${props.pictureText}`}>
+      
+            <img src={props.picturediv} height="150px" width="200px"/>
+            
            
-          />
-          <CardContent>
-            <Typography gutterBottom variant="p" component="h6" style={{textAlign:"center"}}>
-             {props.pictureText}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {props.description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
+         
+             <h5>{props.pictureText}</h5>
+           
        
-      </Card>
+     
       </Link>
       </div>
      

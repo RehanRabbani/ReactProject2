@@ -41,7 +41,7 @@ import RouterComponent from './RouterComponent';
         <Slider/>
        
         <Menu picture={this.state.foods}/>
-        <About/>
+        
          {/* <p>
          {
            this.state.foods.map((food,index)=>{return(<Menu 

@@ -6,9 +6,14 @@
   flex-wrap: wrap;
 }
 .box-st{
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   display: flex;
   justify-content: center;
-  background-color: pink;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
   margin-top: 4rem ;
 }
 .slider-style{
@@ -101,6 +106,7 @@ a{
   margin: 1rem;
  
 }
-.jss139 {
-  widows: 200px;
+.menuBox{
+  text-align: center;
+  background-color: rebeccapurple;
 }
