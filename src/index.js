@@ -7,6 +7,7 @@ import NavBar from './components/Navbar';
 import Slider from './components/Slider';
 import Menu from './components/Menu';
 import ExtraComponent from './components/ExtraComponent';
+import About from './components/About';
 import RouterComponent from './RouterComponent';
  export default class App extends Component {
     constructor(props) {
@@ -38,9 +39,9 @@ import RouterComponent from './RouterComponent';
          <div className="parent">
         <NavBar/>
         <Slider/>
-      
+       
         <Menu picture={this.state.foods}/>
-        
+        <About/>
          {/* <p>
          {
            this.state.foods.map((food,index)=>{return(<Menu 
@@ -53,6 +54,7 @@ import RouterComponent from './RouterComponent';
          }
          </p>
          */}
+       
          </div>
      )  
          

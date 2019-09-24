@@ -41,10 +41,12 @@ class CategoryDescription extends React.Component{
         return(
             <div className="category-styling">
             {this.state.meals.map((meal)=>{return(
+                <Link to={`/descriptionmeal/${meal.idMeal}`}>
                 <div className="cate-srt">
                 <p>{meal.strMeal}</p>
                 <img src={meal.strMealThumb} height="150px" width="150px"/>
                 </div>
+                </Link>
             )})}
             </div>
                 )
