@@ -12,7 +12,7 @@
   margin-top: 4rem ;
 }
 .slider-style{
-  background-image: url('./images/two.jpeg');
+  background-image: url('./images/one.jpeg');
     background-color: black;
     background-size: cover;
   color: white;
@@ -67,7 +67,37 @@
 .btn, .btn-outline-success{
   border-radius: 0px !important;
   border: 5px solid;
-  width: 12%;
- color: black !important;
+  width: 30%;
+ color: white !important;
  font-weight: bold;
+}
+.nav{
+  height: 3.2rem;
+ 
+  width: 100% !important;
+}
+a{
+  color: black !important;
+}
+.category-sli{
+  background: rgb(0,36,30);
+  background: linear-gradient(90deg, rgba(0,36,30,0.989233193277311) 0%, rgba(9,121,31,1) 35%, rgba(0,121,255,1) 100%);
+  height: 400px;
+  width:100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-color{
+  color: white;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.mealdesc{
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 1rem;
+ 
 }

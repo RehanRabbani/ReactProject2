@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {Link} from 'react-router-dom';
+import NavBar from './Navbar';
 const useStyles = makeStyles({
     card: {
       maxWidth: 345,
@@ -40,8 +41,13 @@ class CategoryDescription extends React.Component{
         console.log(this.props);
         return(
             <div className="category-styling">
+            <NavBar/>
+            <div className="category-sli">
+            <h1 className="heading-color">{this.props.match.params.category}</h1>
+        </div>
             {this.state.meals.map((meal)=>{return(
                 <Link to={`/descriptionmeal/${meal.idMeal}`}>
+                
                 <div className="cate-srt">
                 <p>{meal.strMeal}</p>
                 <img src={meal.strMealThumb} height="150px" width="150px"/>
